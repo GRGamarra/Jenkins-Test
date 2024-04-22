@@ -7,6 +7,8 @@ Meaning for the added files and folders:
 + `helloworld.py` Is a file used for testing commit responses, signatures, and so on.
 
 ### Setup
+> Before proceeding with the Setup remember to store the `docker files/` and `jenkins-data/` folders on your machine.
+
 The following commands should be used in order to set up the base system from scratch: <br />
 Building and running the provided **Jenkins Dockerfile**
 ```
