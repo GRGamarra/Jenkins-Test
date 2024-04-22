@@ -17,6 +17,8 @@ docker build -t jenkins/master /docker-files/jenkins-master
 ```
 docker run --name jenkins-master --restart=on-failure --detach -v /jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 jenkins/master:latest
 ```
+> [!CAUTION]
+> It is required to look for the GID of Docker in your host machine, and change its value in the Dockerfile of Jenkins, otherwise it will not have the permission to run the Docker commands.
 
 Building the provided **Java and Python3 Dockerfiles**
 ```
